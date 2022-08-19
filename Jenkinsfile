@@ -10,7 +10,7 @@ pipeline {
     stage("build") {
       steps {
         sh 'npm install'
-        sh 'npm install -g @angular/cli'
+        sh 'npm install -g @angular/cli@12.2.18'
         sh 'ng build --prod'
       }
     }
