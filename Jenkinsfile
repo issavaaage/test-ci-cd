@@ -16,7 +16,8 @@ pipeline {
     }
     stage("deploy") {
       steps {
-        echo "$(ls)"
+        def workspace = pwd();
+        echo '$(workspace)';
       }
     }
   }
