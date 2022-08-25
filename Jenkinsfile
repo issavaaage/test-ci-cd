@@ -11,17 +11,12 @@ pipeline {
       steps {
         sh 'npm install'
         sh 'npm install -g @angular/cli@12.2.18'
-        sh 'ng build --prod'
-      }
-    }
-    stage("test") {
-      steps {
-        sh 'ng test'
+        sh 'ng build'
       }
     }
     stage("deploy") {
       steps {
-        echo "deploy"
+        echo "$PWD"
       }
     }
   }
