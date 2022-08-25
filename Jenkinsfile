@@ -16,7 +16,7 @@ pipeline {
     }
     stage("deploy") {
       steps {
-        sh 'echo ls /'
+        sh 'echo $(ls)'
       }
     }
   }
