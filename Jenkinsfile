@@ -16,7 +16,7 @@ pipeline {
     }
     stage("deploy") {
       steps {
-        sh 'for entry in "$/"/* do echo "$entry" done'
+        sh 'echo ls /'
       }
     }
   }
